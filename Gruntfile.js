@@ -36,6 +36,8 @@ module.exports = function(grunt) {
             files: files,
             options: {
                 globals: {
+                    afterEach: true,
+                    beforeEach: true,
                     describe: true,
                     expect: true,
                     it: true
