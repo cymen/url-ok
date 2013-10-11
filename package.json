@@ -1,0 +1,25 @@
+{
+    "name": "url-ok",
+    "description": "check http status for number of URLs with timeout",
+    "version": "0.0.1",
+    "bin": "main.js",
+    "main": "lib/url-ok.js",
+    "dependencies": {
+        "cli": "0.4.5",
+        "promise": "3.2.0"
+    },
+    "engines": {
+        "node": ">=0.8"
+    },
+    "devDependencies": {
+        "grunt": "0.4.1",
+        "grunt-contrib-jshint": "0.6.4",
+        "grunt-jasmine-node": "0.1.0",
+        "grunt-jsbeautifier": "0.2.2",
+        "nock": "0.22.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cymen/url-ok"
+    }
+}
