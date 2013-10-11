@@ -15,7 +15,12 @@ describe('accumulator', function() {
             .head('/')
             .reply(statusCode);
 
-        var pending = accumulator([url]);
+        var url_b = "http://localhost:32769/";
+        nock(url_b)
+            .head('/')
+            .reply(statusCode);
+
+        var pending = accumulator([url, url_b]);
 
         pending.done(function() {
             done();
