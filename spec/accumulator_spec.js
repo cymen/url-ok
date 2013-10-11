@@ -25,6 +25,5 @@ describe('accumulator', function() {
         pending.done(function() {
             done();
         });
-
     });
 });
