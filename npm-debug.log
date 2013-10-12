@@ -1,0 +1,146 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.20/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.20
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/cvig/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+12 verbose folder .
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /Users/cvig/.npm/1f1177db-tar.lock
+15 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+16 verbose lock tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz /Users/cvig/.npm/ff6fc1a0-68807-0-6870914262253791-tmp-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+20 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+21 verbose tar unpack /var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+22 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+23 verbose lock tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package /Users/cvig/.npm/8e761725-68807-0-6870914262253791-package.lock
+24 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+25 verbose lock tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz /Users/cvig/.npm/ff6fc1a0-68807-0-6870914262253791-tmp-tgz.lock
+26 silly gunzTarPerm modes [ '755', '644' ]
+27 silly gunzTarPerm extractEntry package.json
+28 silly gunzTarPerm extractEntry .npmignore
+29 silly gunzTarPerm extractEntry README.md
+30 silly gunzTarPerm extractEntry Gruntfile.js
+31 silly gunzTarPerm extractEntry main.js
+32 silly gunzTarPerm extractEntry .travis.yml
+33 silly gunzTarPerm extractEntry lib/accumulator.js
+34 silly gunzTarPerm extractEntry lib/options.js
+35 silly gunzTarPerm extractEntry lib/status.js
+36 silly gunzTarPerm extractEntry spec/accumulator_spec.js
+37 silly gunzTarPerm extractEntry spec/status_spec.js
+38 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+39 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+40 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+41 silly lockFile ff6fc1a0-68807-0-6870914262253791-tmp-tgz tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/tmp.tgz
+42 verbose tar pack [ '/Users/cvig/.npm/url-ok/0.0.5/package.tgz',
+42 verbose tar pack   '/var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package' ]
+43 verbose tarball /Users/cvig/.npm/url-ok/0.0.5/package.tgz
+44 verbose folder /var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+45 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+46 verbose lock tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package /Users/cvig/.npm/8e761725-68807-0-6870914262253791-package.lock
+47 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+48 verbose lock tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz /Users/cvig/.npm/248a3e35-vig-npm-url-ok-0-0-5-package-tgz.lock
+49 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+50 silly lockFile 8e761725-68807-0-6870914262253791-package tar:///var/folders/wm/75y7hqb14z34hsl79w91t8mm0000gn/T/npm-26479-8gPrUps4/1381556168807-0.6870914262253791/package
+51 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+52 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+53 silly lockFile fb9f7cd2-rs-cvig-npm-url-ok-0-0-5-package /Users/cvig/.npm/url-ok/0.0.5/package
+54 verbose lock /Users/cvig/.npm/url-ok/0.0.5/package /Users/cvig/.npm/fb9f7cd2-rs-cvig-npm-url-ok-0-0-5-package.lock
+55 silly lockFile fb9f7cd2-rs-cvig-npm-url-ok-0-0-5-package /Users/cvig/.npm/url-ok/0.0.5/package
+56 silly lockFile fb9f7cd2-rs-cvig-npm-url-ok-0-0-5-package /Users/cvig/.npm/url-ok/0.0.5/package
+57 verbose tar unpack /Users/cvig/.npm/url-ok/0.0.5/package.tgz
+58 silly lockFile e862e038-rs-cvig-npm-url-ok-0-0-5-package tar:///Users/cvig/.npm/url-ok/0.0.5/package
+59 verbose lock tar:///Users/cvig/.npm/url-ok/0.0.5/package /Users/cvig/.npm/e862e038-rs-cvig-npm-url-ok-0-0-5-package.lock
+60 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+61 verbose lock tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz /Users/cvig/.npm/248a3e35-vig-npm-url-ok-0-0-5-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry Gruntfile.js
+67 silly gunzTarPerm extractEntry main.js
+68 silly gunzTarPerm extractEntry .travis.yml
+69 silly gunzTarPerm extractEntry lib/accumulator.js
+70 silly gunzTarPerm extractEntry lib/options.js
+71 silly gunzTarPerm extractEntry lib/status.js
+72 silly gunzTarPerm extractEntry spec/accumulator_spec.js
+73 silly gunzTarPerm extractEntry spec/status_spec.js
+74 silly lockFile e862e038-rs-cvig-npm-url-ok-0-0-5-package tar:///Users/cvig/.npm/url-ok/0.0.5/package
+75 silly lockFile e862e038-rs-cvig-npm-url-ok-0-0-5-package tar:///Users/cvig/.npm/url-ok/0.0.5/package
+76 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+77 silly lockFile 248a3e35-vig-npm-url-ok-0-0-5-package-tgz tar:///Users/cvig/.npm/url-ok/0.0.5/package.tgz
+78 verbose chmod /Users/cvig/.npm/url-ok/0.0.5/package.tgz 644
+79 verbose chown /Users/cvig/.npm/url-ok/0.0.5/package.tgz [ 501, 20 ]
+80 silly lockFile 3a52ce78- .
+81 silly lockFile 3a52ce78- .
+82 silly publish { name: 'url-ok',
+82 silly publish   description: 'check http status for number of URLs with timeout',
+82 silly publish   version: '0.0.5',
+82 silly publish   bin: { 'url-ok': 'main.js' },
+82 silly publish   main: 'lib/url-ok.js',
+82 silly publish   dependencies: { 'argv-parser': '0.1.4', promise: '3.2.0' },
+82 silly publish   engines: { node: '>=0.8' },
+82 silly publish   devDependencies:
+82 silly publish    { grunt: '0.4.1',
+82 silly publish      'grunt-contrib-jshint': '0.6.4',
+82 silly publish      'grunt-jasmine-node': '0.1.0',
+82 silly publish      'grunt-jsbeautifier': '0.2.2',
+82 silly publish      'http-proxy': '0.10.3',
+82 silly publish      nock: '0.22.1' },
+82 silly publish   repository: { type: 'git', url: 'https://github.com/cymen/url-ok' },
+82 silly publish   scripts: { test: 'jasmine-node --forceexit spec/*spec.js' },
+82 silly publish   readme: '# url-ok [![Build Status](https://travis-ci.org/cymen/url-ok.png?branch=master)](https://travis-ci.org/cymen/url-ok)\n\n[![NPM](https://nodei.co/npm/url-ok.png?downloads=true&stars=true)](https://npmjs.org/package/url-ok)\n\n`url-ok` is a HTTP and HTTPS status checker for URLs. The default timeout is 120 seconds at\nwhich point it will abort the checks and the process will have an exit code of 1. If all\nthe checks are successfull (success is defined as returning 200), the process will have an\nexit code of 0.\n\nIf a URL cannot be reached, it will continue to try to reach the URL every 500 milleseconds\nup to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.\n\n## Options\n\n    --timeout to set a specific timeout in seconds\n    --verbose to enable verbose output\n\n## Example of a successful run\n\n    # url-ok http://www.google.com/ http://www.microsoft.com/ http://www.apple.com/ --verbose\n    Waiting up to 120 seconds for response(s).\n    Requesting http://www.google.com/\n    Requesting http://www.microsoft.com/\n    Requesting http://www.apple.com/\n    200 \'http://www.google.com/\'\n    200 \'http://www.apple.com/\'\n    200 \'http://www.microsoft.com/\'\n    Received successful response for all URLs.\n\n    # echo $?\n    0\n\n## Example of failing run\n\n    # url-ok http://no.such.server.localhost/ --timeout 10 --verbose\n    Waiting up to 10 seconds for response(s).\n    Requesting http://no.such.server.localhost/\n    Aborting after 10 seconds!\n    At least one URL failed to respond!\n\n    # echo $?\n    1\n\n## Install\n\n    npm install -g url-ok\n',
+82 silly publish   readmeFilename: 'README.md',
+82 silly publish   bugs: { url: 'https://github.com/cymen/url-ok/issues' },
+82 silly publish   _id: 'url-ok@0.0.5',
+82 silly publish   dist: { shasum: 'e3390938d7229b163fd1bf4cd2e488e61c840f75' },
+82 silly publish   _from: '.' }
+83 verbose url raw url-ok
+84 verbose url resolving [ 'https://registry.npmjs.org/', './url-ok' ]
+85 verbose url resolved https://registry.npmjs.org/url-ok
+86 info trying registry request attempt 1 at 00:36:08
+87 http PUT https://registry.npmjs.org/url-ok
+88 http 409 https://registry.npmjs.org/url-ok
+89 verbose url raw url-ok
+90 verbose url resolving [ 'https://registry.npmjs.org/', './url-ok' ]
+91 verbose url resolved https://registry.npmjs.org/url-ok
+92 info trying registry request attempt 1 at 00:36:09
+93 http GET https://registry.npmjs.org/url-ok
+94 http 200 https://registry.npmjs.org/url-ok
+95 error publish fail Cannot publish over existing version.
+95 error publish fail Update the 'version' field in package.json and try again.
+95 error publish fail
+95 error publish fail If the previous version was published in error, see:
+95 error publish fail     npm help unpublish
+95 error publish fail
+95 error publish fail To automatically increment version numbers, see:
+95 error publish fail     npm help version
+96 error System Darwin 12.5.0
+97 error command "/usr/local/Cellar/node/0.10.20/bin/node" "/usr/local/bin/npm" "publish"
+98 error cwd /Users/cvig/dev/url-ok-ng
+99 error node -v v0.10.20
+100 error npm -v 1.3.11
+101 error code EPUBLISHCONFLICT
+102 verbose exit [ 1, true ]

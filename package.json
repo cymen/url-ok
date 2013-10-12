@@ -1,7 +1,7 @@
 {
     "name": "url-ok",
     "description": "check http status for number of URLs with timeout",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "bin": "main.js",
     "main": "lib/url-ok.js",
     "dependencies": {
