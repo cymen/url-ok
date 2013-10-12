@@ -11,6 +11,7 @@ up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 ## Options
 
 --timeout to set a specific timeout in seconds
+
 --verbose to enable verbose output
 
 ## Example of a successful run
