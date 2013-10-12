@@ -24,6 +24,6 @@
         "url": "https://github.com/cymen/url-ok"
     },
     "scripts": {
-        "test": "jasmine-node spec/*spec.js"
+        "test": "jasmine-node --forceexit spec/*spec.js"
     }
 }
