@@ -22,5 +22,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/cymen/url-ok"
+    },
+    "scripts": {
+        "test": "jasmine-node spec/*spec.js"
     }
 }
