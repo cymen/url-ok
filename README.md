@@ -1,6 +1,17 @@
 # url-ok
 
-url-ok is a http and https status checker for URLs with timeout
+`url-ok` is a HTTP and HTTPS status checker for URLs. The default timeout is 120 seconds at
+which point it will abort the checks and the process will have an exit code of 1. If all
+the checks are successfull (success is defined as returning 200), the process will have an
+exit code of 0.
+
+If a URL cannot be reached, it will continue to try to reach the URL every 500 milleseconds
+up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
+
+## Options
+
+--timeout to set a specific timeout in seconds
+--verbose to enable verbose output
 
 ## Example of a successful run
 
