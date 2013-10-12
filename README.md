@@ -41,3 +41,7 @@ up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 
     # echo $?
     1
+
+## Install
+
+    npm install -g url-ok
