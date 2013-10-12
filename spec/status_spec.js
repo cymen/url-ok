@@ -2,7 +2,8 @@
 
 var status = require('../lib/status.js'),
     nock = require('nock'),
-    promise = require('promise');
+    promise = require('promise'),
+    successCode = 200;
 
 describe('status', function() {
     afterEach(function() {
@@ -14,49 +15,65 @@ describe('status', function() {
     });
 
     it('makes a HEAD request for http', function(done) {
-        var url = "http://localhost:32768/",
-            statusCode = 200;
+        var url = "http://localhost:32768/";
+
         nock(url)
             .head('/')
-            .reply(statusCode);
+            .reply(successCode);
 
         var pending = status(url);
 
         pending.done(function(code) {
-            expect(code).toBe(statusCode);
+            expect(code).toBe(successCode);
             done();
         });
     });
 
     it('makes a GET request for https', function(done) {
-        var url = "https://localhost:32768/",
-            statusCode = 211;
+        var url = "https://localhost:32768/";
+
         nock(url)
             .get('/')
-            .reply(statusCode);
+            .reply(successCode);
 
         var pending = status(url);
 
         pending.done(function(code) {
-            expect(code).toBe(statusCode);
+            expect(code).toBe(successCode);
             done();
         });
     });
 
     it('keeps trying until it gets a response', function(done) {
-        var url = "http://localhost:32768/",
-            statusCode = 204;
+        var url = "http://localhost:32768/";
 
         setTimeout(function() {
             nock(url)
                 .head('/')
-                .reply(statusCode);
+                .reply(successCode);
         }, 1000);
 
         var pending = status(url);
 
         pending.done(function(code) {
-            expect(code).toBe(statusCode);
+            expect(code).toBe(successCode);
+            done();
+        });
+    });
+
+    it('keeps trying if it gets a non-successCode response', function(done) {
+        var url = "http://localhost:32999/";
+
+        nock(url)
+            .head('/')
+            .reply(500)
+            .head('/')
+            .reply(successCode);
+
+        var pending = status(url);
+
+        pending.done(function(code) {
+            expect(code).toBe(successCode);
             done();
         });
     });
