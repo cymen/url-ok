@@ -1,4 +1,6 @@
-# url-ok [![Build Status](https://travis-ci.org/cymen/url-ok.png)](https://travis-ci.org/cymen/url-ok)
+# url-ok [![Build Status](https://travis-ci.org/cymen/url-ok.png?branch=master)](https://travis-ci.org/cymen/url-ok)
+
+[![NPM](https://nodei.co/npm/url-ok.png?downloads=true&stars=true)](https://npmjs.org/package/url-ok)
 
 `url-ok` is a HTTP and HTTPS status checker for URLs. The default timeout is 120 seconds at
 which point it will abort the checks and the process will have an exit code of 1. If all
