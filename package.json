@@ -5,6 +5,7 @@
     "bin": "main.js",
     "main": "lib/url-ok.js",
     "dependencies": {
+        "argv-parser": "0.1.4",
         "promise": "3.2.0"
     },
     "engines": {
