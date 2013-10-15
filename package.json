@@ -1,7 +1,7 @@
 {
     "name": "url-ok",
     "description": "check http or https status for number of URLs with timeout",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "bin": "main.js",
     "main": "lib/url-ok.js",
     "dependencies": {
@@ -19,6 +19,7 @@
         "http-proxy": "0.10.3",
         "nock": "0.22.1"
     },
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/cymen/url-ok"
