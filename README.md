@@ -45,20 +45,18 @@ For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 
 ## Example of failing run with debugging
 
-    # url-ok http://no.such.server.localhost/ --timeout 10 --interval 2 --verbose --debug
-    Waiting up to 10 seconds for response(s).
+    # url-ok http://no.such.server.localhost/ --timeout 2 --interval .5 --verbose --debug
+    Waiting up to 2 seconds for response(s) with check every 1 seconds.
     Requesting http://no.such.server.localhost/
-    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: requesting http://no.such.server.localhost/ (interval: 500ms)
     DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
-    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: requesting http://no.such.server.localhost/ (interval: 500ms)
     DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
-    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: requesting http://no.such.server.localhost/ (interval: 500ms)
     DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
-    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: requesting http://no.such.server.localhost/ (interval: 500ms)
     DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
-    DEBUG: requesting http://no.such.server.localhost/
-    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
-    Aborting after 10 seconds!
+    Aborting after 2 seconds!
     At least one URL failed to respond!
 
 ## Install
@@ -68,3 +66,5 @@ For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 ## Todo
 
 * add timestamps to logging
+* log which URL(s) actually failed
+* log time duration to reach success

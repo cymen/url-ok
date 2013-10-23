@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
-var accumulator = require('./lib/accumulator');
-    failure = 1,
+var accumulator = require('./lib/accumulator'),
     options = require('./lib/options'),
+    interval = options.parsed.interval,
+    failure = 1,
     success = 0,
     timeout = options.parsed.timeout;
 
 if (options.parsed.verbose) {
-  console.log('Waiting up to', Math.round(timeout/1000), 'seconds for response(s).');
+  console.log('Waiting up to', Math.round(timeout/1000), 'seconds for response(s) with check every', Math.round(interval/1000), 'seconds.');
 }
 
 accumulator(options.parsed.argv.remain, timeout)
