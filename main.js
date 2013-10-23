@@ -8,7 +8,7 @@ var accumulator = require('./lib/accumulator'),
     timeout = options.parsed.timeout;
 
 if (options.parsed.verbose) {
-  console.log('Waiting up to', Math.round(timeout/1000), 'seconds for response(s) with check every', Math.round(interval/1000), 'seconds.');
+  console.log('Waiting up to', Math.round(timeout/1000), 'seconds for response(s) with check every', Math.round(interval/100)/10, 'seconds.');
 }
 
 accumulator(options.parsed.argv.remain, timeout)

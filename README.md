@@ -46,7 +46,7 @@ For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 ## Example of failing run with debugging
 
     # url-ok http://no.such.server.localhost/ --timeout 2 --interval .5 --verbose --debug
-    Waiting up to 2 seconds for response(s) with check every 1 seconds.
+    Waiting up to 2 seconds for response(s) with check every 0.5 seconds.
     Requesting http://no.such.server.localhost/
     DEBUG: requesting http://no.such.server.localhost/ (interval: 500ms)
     DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
