@@ -10,7 +10,7 @@ describe('accumulator', function() {
     });
 
     it('resolves successfully when all URLs are successful', function(done) {
-        var urls = ['http://localhost:32001/', 'http://localhost:32002'],
+        var urls = ['http://localhost:32001/', 'http://localhost:32002/'],
             thirty_seconds_in_ms = 30 * 1000;
 
         urls.forEach(function(url) {

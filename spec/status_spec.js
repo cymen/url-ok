@@ -44,16 +44,16 @@ describe('status', function() {
         });
     });
 
-    it('keeps trying until it gets a response', function(done) {
+    it('keeps trying even if server is down until it gets a response', function(done) {
         var url = "http://localhost:32768/";
 
         setTimeout(function() {
             nock(url)
                 .head('/')
                 .reply(successCode);
-        }, 1000);
+        }, 125);
 
-        var pending = status(url);
+        var pending = status(url, 50);
 
         pending.done(function(code) {
             expect(code).toBe(successCode);
@@ -61,7 +61,7 @@ describe('status', function() {
         });
     });
 
-    it('keeps trying if it gets a non-successCode response', function(done) {
+    it('keeps trying if it gets a non-successCode response at first', function(done) {
         var url = "http://localhost:32999/";
 
         nock(url)

@@ -7,13 +7,15 @@ which point it will abort the checks and the process will have an exit code of 1
 the checks are successfull (success is defined as returning 200), the process will have an
 exit code of 0.
 
-If a URL cannot be reached, it will continue to try to reach the URL every 500 milleseconds
-up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
+If a URL cannot be reached, it will continue to try to reach the URL every second up to the timeout.
+For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 
 ## Options
 
-    --timeout to set a specific timeout in seconds
+    --timeout to set a specific timeout in seconds (default 120 seconds)
+    --interval to set a specific interval between attempts (defaults to one second)
     --verbose to enable verbose output
+    --debug to enable extremely verbose output
 
 ## Example of a successful run
 
@@ -32,7 +34,7 @@ up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
 
 ## Example of failing run
 
-    # url-ok http://no.such.server.localhost/ --timeout 10 --verbose
+    # url-ok http://no.such.server.localhost/ --timeout 10 --interval 2 --verbose
     Waiting up to 10 seconds for response(s).
     Requesting http://no.such.server.localhost/
     Aborting after 10 seconds!
@@ -41,6 +43,28 @@ up to the timeout. For HTTP, it uses a HEAD request while for HTTPS it uses GET.
     # echo $?
     1
 
+## Example of failing run with debugging
+
+    # url-ok http://no.such.server.localhost/ --timeout 10 --interval 2 --verbose --debug
+    Waiting up to 10 seconds for response(s).
+    Requesting http://no.such.server.localhost/
+    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
+    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
+    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
+    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
+    DEBUG: requesting http://no.such.server.localhost/
+    DEBUG: error http://no.such.server.localhost/ Error: getaddrinfo ENOTFOUND
+    Aborting after 10 seconds!
+    At least one URL failed to respond!
+
 ## Install
 
     npm install -g url-ok
+
+## Todo
+
+* add timestamps to logging
